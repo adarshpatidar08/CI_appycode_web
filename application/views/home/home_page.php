@@ -1,5 +1,5 @@
 <?php
-defined ('BASEPATH') OR exit ('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 <section class="banner">
     <div class="container-fluid">
@@ -342,17 +342,27 @@ defined ('BASEPATH') OR exit ('No direct script access allowed');
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-self-center">
                 <div class="w-100">
-                    <form class="p-5 contact-form">
+                    <form class="p-5 contact-form" id="form_registration" name="form_registration" action="<?php echo base_url() ?>index.php/Home/registration_form" method="post">
+                        <?php
+                        if ($this->session->flashdata('success')) {
+                            echo '<p class="text-success">Data submit successfully</p>';
+                        }
+                        if ($this->session->flashdata('error')) {
+                            echo '<p class="text-danger">They are was error occured</p>';
+                        }
+                        ?>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Name" />
+                            <input type="text" class="form-control" name="username" placeholder="Name" />
+                            <span class="text-danger red-500"><?php echo form_error("username") ?></span>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="E-mail" />
+                            <input type="email" class="form-control" name="email" placeholder="E-mail" />
+                            <span class="text-danger red-500"><?php echo form_error("email") ?></span>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="3" placeholder="Message" /></textarea>
+                            <textarea class="form-control" rows="3" name="message" placeholder="Message" /></textarea>
                         </div>
-                        <button type="submit" class="btn contact-btn mt-3">Submit</button>
+                        <button type="submit" name="submit" class="btn contact-btn mt-3">Submit</button>
                     </form>
                 </div>
             </div>

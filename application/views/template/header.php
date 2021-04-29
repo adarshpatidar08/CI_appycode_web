@@ -32,7 +32,7 @@
                                     <a class="nav-link" href="#">Service</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
+                                    <a class="nav-link" href="#">About</a>
                                 </li>
                                 <li class="nav-item px-2">
                                     <a class="nav-link" href="#">Work</a>

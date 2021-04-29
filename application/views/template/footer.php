@@ -72,6 +72,8 @@
     </div>
 </footer>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 <script src="<?php echo base_url(); ?>front_assets/js/bootstrap.min.js">
 </script>
 <script type="text/javascript">
@@ -85,6 +87,7 @@
         });
     });
 </script>
+<script src="front_assets/js/validation.js"></script>
 </body>
 
 </html>

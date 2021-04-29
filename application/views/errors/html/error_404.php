@@ -35,7 +35,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<p class="m-0">Not Found</p>
 				</div>
 				<div class="col-lg-10 col-md-8 col-sm-10 col-12 d-flex justify-content-center align-self-center my-5 error-section-btn">
-					<button type="button">Back to Home</button>
+					<button type="button" >Back to Home</button>
 				</div>
 			</div>
 		</div>

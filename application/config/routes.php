@@ -53,4 +53,4 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['about'] = 'Home/about';
+$route['registration_form']= 'Home/registration_form';
