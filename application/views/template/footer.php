@@ -73,21 +73,11 @@
 </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 <script src="<?php echo base_url(); ?>front_assets/js/bootstrap.min.js">
 </script>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function() {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 80) {
-                document.getElementById('header').classList.add('sticky');
-            } else {
-                document.getElementById('header').classList.remove('sticky');
-            }
-        });
-    });
-</script>
-<script src="front_assets/js/validation.js"></script>
+<script src="<?php echo base_url(); ?>front_assets/js/form_validation_js/user_form_validation.js"></script>
+<script src="<?php echo base_url(); ?>front_assets/js/main.js"></script>
 </body>
 
 </html>

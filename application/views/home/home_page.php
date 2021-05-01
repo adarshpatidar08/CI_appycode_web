@@ -29,7 +29,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     development, e-commerce development, mobile apps, mobile websites, ads management & more.
                     Here’s a snapshot of what we’re all about</p>
             </div>
-            <div class="row service-content m-0 pt-3 justify-content-between">
+            <div class="row service-content m-0 pt-5 justify-content-between">
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-10 col-12 p-4 mb-3 mx-col-auto position-relative">
                     <h5 class="mb-3"><span>01.</span><span>&nbsp;</span>Website & E-commerce</h5>
                     <p>We are web development and e-commerce experts working on a range of platforms including HTML, CSS, JS, jQuery, PHP, Java, MySQL, WordPress and more.</p>
@@ -316,7 +316,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <div class="container-fluid">
         <div class="row text-white contact-row">
             <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-self-center justify-content-center p-0">
-                <div class="inner-div text-center">
+                <div class="text-center">
                     <h5 class="fs-3 fw-bold">Contact</h5>
                     <address class="fs-6 fw-normal pt-3">
                         Visit us at : Example.com<br>
@@ -342,27 +342,32 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-self-center">
                 <div class="w-100">
-                    <form class="p-5 contact-form" id="form_registration" name="form_registration" action="<?php echo base_url() ?>index.php/Home/registration_form" method="post">
+                    <form class="p-5 contact-form" id="user_contact_form" name="form_registration" action="<?php echo base_url() ?>index.php?/Home/UserContactForm" method="post">
+
                         <?php
-                        if ($this->session->flashdata('success')) {
+                        if ($this->session->flashdata('Success')) {
                             echo '<p class="text-success">Data submit successfully</p>';
                         }
-                        if ($this->session->flashdata('error')) {
+                        if ($this->session->flashdata('Error')) {
                             echo '<p class="text-danger">They are was error occured</p>';
                         }
                         ?>
-                        <div class="mb-3">
+
+                        <div class="mt-3">
                             <input type="text" class="form-control" name="username" placeholder="Name" />
-                            <span class="text-danger red-500"><?php echo form_error("username") ?></span>
+                            <span class="text-danger"><?php echo form_error("username") ?></span>
                         </div>
-                        <div class="mb-3">
+                        <div class="mt-3">
                             <input type="email" class="form-control" name="email" placeholder="E-mail" />
-                            <span class="text-danger red-500"><?php echo form_error("email") ?></span>
+                            <span class="text-danger"><?php echo form_error("email") ?></span>
                         </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="3" name="message" placeholder="Message" /></textarea>
+                        <div class="mt-3">
+                            <textarea class="form-control" rows="3" name="message" placeholder="Message" ></textarea>
+                            <span class="text-danger"><?php echo form_error("message") ?></span>
                         </div>
-                        <button type="submit" name="submit" class="btn contact-btn mt-3">Submit</button>
+                        <div class="mt-3">
+                            <button type="submit" name="submit" class="btn contact-btn mt-3">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
