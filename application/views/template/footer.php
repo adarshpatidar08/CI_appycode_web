@@ -72,12 +72,12 @@
     </div>
 </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-<script src="<?php echo base_url(); ?>front_assets/js/bootstrap.min.js">
+<script type="text/javascript" src="front_assets/js/form_validation/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="front_assets/js/form_validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="front_assets/js/bootstrap.min.js">
 </script>
-<script src="<?php echo base_url(); ?>front_assets/js/form_validation_js/user_form_validation.js"></script>
-<script src="<?php echo base_url(); ?>front_assets/js/main.js"></script>
+<script type="text/javascript" src="front_assets/js/form_validation/user_form_validation.js"></script>
+<script type="text/javascript" src="front_assets/js/main.js"></script>
 </body>
 
 </html>
