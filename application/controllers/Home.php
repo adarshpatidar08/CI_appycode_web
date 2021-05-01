@@ -20,7 +20,7 @@ class Home extends CI_Controller
     {
         $this->form_validation->set_rules("username", "User Name", "required|min_length[3]|max_length[20]");
         $this->form_validation->set_rules("email", "Email", "required|valid_email");
-        $this->form_validation->set_rules("message", "Message", "required|max_length[150]");
+        $this->form_validation->set_rules("message", "Message", "required|max_length[250]");
 
         if ($this->form_validation->run()) {
             $this->load->model("ContactFormModel");

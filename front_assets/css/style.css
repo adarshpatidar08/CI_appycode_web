@@ -39,7 +39,9 @@ body {
 	display: flex;
 	padding: .5rem;
 }
-
+.form-control:focus{
+	box-shadow: none;
+}
 .banner-bg {
 	width: 100%;
 	height: 100vh;
@@ -180,6 +182,7 @@ border-radius: 10px;
 .client-feedback-block:hover {
 	background: linear-gradient(135deg, hsla(223, 74%, 48%, 1) 0%, hsla(258, 100%, 26%, 1) 100%);
 	color: #ffffff;
+	font-weight: 500;
 	border-radius: .5rem;
 	box-shadow: 3px 3px 6px #808080;
 	transition: all .3s linear;
@@ -195,30 +198,6 @@ border-radius: 10px;
 	backface-visibility: hidden;
 }
 
-.project-title {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 1.75rem;
-	font-weight: 700;
-	width: max-content;
-}
-
-.project-description {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: .5s ease;
-	opacity: 0;
-	font-size: 1.125rem;
-	font-weight: 700;
-	width: fit-content;
-	text-align: center;
-	padding: 0rem .5rem 0rem .5rem;
-}
-
 .project-ovrly {
 	width: 100%;
 	overflow: hidden;
@@ -226,6 +205,7 @@ border-radius: 10px;
 	-webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+	border: 12px solid rgba(0, 0, 0, 0.3);
 }
 
 .project-ovrly .ovrlyL {
@@ -252,6 +232,29 @@ border-radius: 10px;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+.project-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.75rem;
+	font-weight: 700;
+	width: max-content;
+}
+
+.project-description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .5s ease;
+	opacity: 0;
+	font-size: 1.125rem;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	padding: 0rem .5rem 0rem .5rem;
 }
 
 .project-ovrly:hover .ovrlyL {

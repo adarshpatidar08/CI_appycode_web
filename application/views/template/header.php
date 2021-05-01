@@ -27,23 +27,23 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                                 <li class="nav-item px-2">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="javascript:void(0);">Home</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link" href="#">Service</a>
+                                    <a class="nav-link" href="javascript:void(0);">Service</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="javascript:void(0);">About</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link" href="#">Work</a>
+                                    <a class="nav-link" href="javascript:void(0);">Work</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="javascript:void(0);">Contact</a>
                                 </li>
                             </ul>
                             <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="Javascript:void(0);" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="bi bi-search"></i>
                                 </a>
                                 <form class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">

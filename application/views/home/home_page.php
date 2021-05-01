@@ -106,7 +106,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <h2>Why you can trust us…</h2>
             <p>Over our 5 years of development work, we have gained several certifications and accolades that
                 prove we’re going to be totally worth your money!</p>
-            <div class="row m-0 pt-5 col-gap-3">
+            <div class="row m-0 pt-5 justify-content-center">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-10 m-lg-0 m-3 website-certificate">
                     <div class="website-certificate-icon">
                         <img src="front_assets/images/search.svg" alt="google-logo" class="img-fluid" />
@@ -236,7 +236,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <p>“What you do is what matters, not what you think or say or plan.” ― Jason Fried, Rework</p>
             </div>
             <div class="row m-0 pt-5">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 completed-projects position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3  position-relative">
                     <div class="project-ovrly">
                         <img src="front_assets/images/leone-venter.jpg" alt="" class="img-fluid project-image" />
                         <div class="ovrlyL"></div>
@@ -248,7 +248,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 completed-projects position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3  position-relative">
                     <div class="project-ovrly">
                         <img src="front_assets/images/leone-venter.jpg" alt="" class="img-fluid project-image" />
                         <div class="ovrlyL"></div>
@@ -260,7 +260,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 completed-projects position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3  position-relative">
                     <div class="project-ovrly">
                         <img src="front_assets/images/leone-venter.jpg" alt="" class="img-fluid project-image" />
                         <div class="ovrlyL"></div>
@@ -272,7 +272,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 completed-projects position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3  position-relative">
                     <div class="project-ovrly">
                         <img src="front_assets/images/leone-venter.jpg" alt="" class="img-fluid project-image" />
                         <div class="ovrlyL"></div>
@@ -284,7 +284,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 completed-projects position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3  position-relative">
                     <div class="project-ovrly">
                         <img src="front_assets/images/leone-venter.jpg" alt="" class="img-fluid project-image" />
                         <div class="ovrlyL"></div>
@@ -296,7 +296,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3 completed-projects position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-3  position-relative">
                     <div class="project-ovrly">
                         <img src="front_assets/images/leone-venter.jpg" alt="" class="img-fluid project-image" />
                         <div class="ovrlyL"></div>
@@ -346,10 +346,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                         <?php
                         if ($this->session->flashdata('Success')) {
-                            echo '<p class="text-success">Data submit successfully</p>';
+                            echo '<p class="text-success fs-5">Data submit successfully</p>';
                         }
                         if ($this->session->flashdata('Error')) {
-                            echo '<p class="text-danger">They are was error occured</p>';
+                            echo '<p class="text-danger fs-5">They are was error occured</p>';
                         }
                         ?>
 
